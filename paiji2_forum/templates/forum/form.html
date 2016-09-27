@@ -25,7 +25,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <div class="form-group">
 
     {% bootstrap_form_errors form %}
-
+    
+    <div class="alert alert-info" role="alert">
+        Use the <em>Markdown</em> format. 
+        Cf. <a href="http://daringfireball.net/projects/markdown/basics">documentation</a>
+    </div>
     <div class="forum-icon-selector">
         {% if form.icon.errors %} 
         <div class="alert alert-danger alert-dismissable alert-link">
