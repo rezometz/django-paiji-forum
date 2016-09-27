@@ -57,6 +57,10 @@ class Markdownarea(Textarea):
 class AnswerForm(ModelForm):
 
     text = CharField(
+        initial=_('''\
+Use the *Markdown* format here.
+
+Cf. [documentation](http://daringfireball.net/projects/markdown/basics).'''),
         widget=Markdownarea,
         strip=False,
         min_length=5,
